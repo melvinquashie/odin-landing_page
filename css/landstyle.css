@@ -1,14 +1,16 @@
+/*CSS styles*/
 *{
   font-family: Helvetica;
   margin: 0;
 }
 
-div.box{
-  /*display:flex;*/
-}
+/*div.box{
+  display:flex;
+}*/
 
 .dark-space{
   background-color: #1F2937;
+  padding: 20px;
 }
 
 .container{
@@ -19,6 +21,9 @@ div.box{
   flex: 1;
 }
 
+
+
+/* Header styles */
 p.logo{
   color: #F9FAF8;
   font-size: 24px;
@@ -28,6 +33,52 @@ a{
   color: #cbcfd5;
 }
 
+
+
+/* Section 1 styles */
+div.section-one{
+  height: 250px;
+}
+
+div.left p.main-text{
+  font-size: 48px;
+  font-weight: extra-bold;
+  color: #F9FAF8
+}
+
+div.left p.secondary-text{
+  font-size: 18px;
+  color: #E5E7EB;
+  padding-bottom: 15px;
+}
+
+button.signup{
+  background-color: #3c82f6;
+  border: none;
+  color: #ffffff;
+  padding: 5px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 8px;
+}
+
+div.right{
+  background-color: #6d747d;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+div.right p.secondary-text{
+  font-size: 18px;
+  color: #E5E7EB;
+  text-align: center;
+  
+}
+
+/* Footer styles */
 div.footer p{
   color: #ececee;
   text-align: center;
