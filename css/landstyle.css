@@ -10,7 +10,16 @@
 
 .dark-space{
   background-color: #1F2937;
-  padding: 20px;
+  padding: 50px;
+  padding-left: 100px;
+  padding-right: 100px;
+}
+
+.light-space{
+  background-color: #ffffff;
+  padding: 50px;
+  padding-left: 100px;
+  padding-right: 100px;
 }
 
 .container{
@@ -75,8 +84,54 @@ div.right p.secondary-text{
   font-size: 18px;
   color: #E5E7EB;
   text-align: center;
+}
+
+
+
+/* Section 2 styles */
+div.section-two{
+  height: 250px;
+}
+
+div.section-two p.information{
+  font-size: 36px;
+  font-weight: extra-bold;
+  color: #1F2937;
+  text-align: center;
+}
+
+div.square-basket{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 50px;
+  padding-left: 200px;
+  padding-right: 200px;
+  gap: 8px;
+}
+
+div.square-bag{
+  display: inline-block;
+  outline: 1px solid red;
+}
+
+div.item div.square{
+  height: 100px;
+  width: 100px;
+  border: #3882f6 solid;
+  border-radius: 8px;
+  border-width: 3px;
+  position: relative;
+  left: 25%;
   
 }
+
+p.img-subtext{
+  text-align: center;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
 
 /* Footer styles */
 div.footer p{
