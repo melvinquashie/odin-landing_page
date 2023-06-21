@@ -105,14 +105,14 @@ div.square-basket{
   justify-content: center;
   align-items: center;
   padding-top: 50px;
-  padding-left: 200px;
-  padding-right: 200px;
+  padding-left: 300px;
+  padding-right: 300px;
   gap: 8px;
 }
 
 div.square-bag{
   display: inline-block;
-  outline: 1px solid red;
+  /*outline: 1px solid red;*/
 }
 
 div.item div.square{
@@ -122,14 +122,16 @@ div.item div.square{
   border-radius: 8px;
   border-width: 3px;
   position: relative;
-  left: 25%;
+  left: 20%;
   
 }
 
+
+
 p.img-subtext{
   text-align: center;
-  padding-left: 30px;
-  padding-right: 30px;
+  /*padding-left: 30px;
+  padding-right: 30px;*/
 }
 
 
