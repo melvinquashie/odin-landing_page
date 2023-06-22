@@ -2,39 +2,38 @@
 *{
   font-family: Helvetica;
   margin: 0;
+  box-sizing: border-box; /* Include padding and border in the element's total width */
 }
 
-/*div.box{
-  display:flex;
-}*/
+div.box{
+  margin: 0;
+  width: 100%;
+
+}
 
 .dark-space{
   background-color: #1F2937;
   padding: 50px;
-  padding-left: 100px;
-  padding-right: 100px;
 }
 
 .light-space{
   background-color: #ffffff;
   padding: 50px;
-  padding-left: 100px;
-  padding-right: 100px;
 }
 
 .grey-space{
   background-color: #E5E7EB;
   padding: 50px;
-  padding-left: 100px;
-  padding-right: 100px;
 }
 
 .container{
   display: flex;
+  flex-wrap: wrap; /* Allow flex items to wrap to a new line if necessary */
 }
 
 .item{
   flex: 1;
+  min-width: 0; /* Allow items to shrink beyond their content width */
 }
 
 
@@ -53,19 +52,30 @@ a{
 
 /* Section 1 styles */
 div.section-one{
-  height: 250px;
+  min-height: 250px; /* Use min-height to ensure the div always has a minimum height */
+  display: flex; /* Display the items in a row */
+  flex-wrap: wrap; /* Allow items to wrap to a new line if necessary */
+}
+
+div.left {
+  flex: 1; /* Let the left div take all available space */
+  display: flex; /* Display the text and button in a column */
+  flex-direction: column;
+  justify-content: center;
 }
 
 div.left p.main-text{
   font-size: 48px;
   font-weight: bolder;
-  color: #F9FAF8
+  color: #F9FAF8;
+  margin-bottom: 10px;
 }
 
 div.left p.secondary-text{
   font-size: 18px;
   color: #E5E7EB;
   padding-bottom: 15px;
+  margin-bottom: 20px;
 }
 
 button.signup{
@@ -81,6 +91,7 @@ button.signup{
 }
 
 div.right{
+  flex: 1; /* Let the right div take all available space */
   background-color: #6d747d;
   display: flex;
   justify-content: center;
@@ -97,29 +108,27 @@ div.right p.secondary-text{
 
 /* Section 2 styles */
 div.section-two{
-  height: 250px;
+  min-height: 250px;
+  text-align: center;
 }
 
 div.section-two p.information{
   font-size: 36px;
   font-weight: bolder;
   color: #1F2937;
-  text-align: center;
+  margin-bottom: 30px;
 }
 
 div.square-basket{
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-top: 50px;
-  padding-left: 300px;
-  padding-right: 300px;
   gap: 8px;
 }
 
 div.square-bag{
-  display: inline-block;
-  /*outline: 1px solid red;*/
+  display: flex; /* Display the square and text in a column */
+  flex-direction: column;
 }
 
 div.item div.square{
@@ -128,31 +137,28 @@ div.item div.square{
   border: #3882f6 solid;
   border-radius: 8px;
   border-width: 3px;
-  position: relative;
-  left: 20%;
+  margin-left: auto;
+  margin-right: auto;
   
 }
 
 p.img-subtext{
   text-align: center;
-  /*padding-left: 30px;
-  padding-right: 30px;*/
 }
 
 
 
 /* Section 3 styles */
 div.section-three{
-  height: 250px;
-  padding-left: 300px;
-  padding-right: 300px;
+  min-height: 250px;
+  text-align: center;
 }
 
 div.section-three p.quote{
-  text-align: center;
   font-size: 36px;
   font-weight: lighter;
-  color: #1f2937
+  color: #1f2937;
+  margin-bottom: 10px;
 }
 
 p.quote-author{
@@ -163,7 +169,40 @@ p.quote-author{
 
 
 /* Section 4 styles */
+div.section-four{
+  min-height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
+div.prompt-box.container {
+  flex-wrap: wrap; /* Allow the prompt box to wrap to a new line if necessary */
+  background-color: #3882f6; 
+  padding: 10px;
+}
+
+div.left-prompt.item,
+div.right-prompt.item {
+  flex: 1;
+  text-align: center;
+}
+
+p.action-text {
+  font-size: 24px;
+  font-weight: bolder;
+  color: #ffffff;
+  margin-bottom: 10px;
+}
+
+p.sub-action-text {
+  font-size: 18px;
+  color: #dee3ec;
+}
+
+div.right-prompt.item button{
+  border: 2px solid #ffffff;
+}
 
 
 /* Footer styles */
