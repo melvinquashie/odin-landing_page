@@ -14,16 +14,22 @@ div.box{
 .dark-space{
   background-color: #1F2937;
   padding: 50px;
+  padding-left: 200px;
+  padding-right: 200px;
 }
 
 .light-space{
   background-color: #ffffff;
   padding: 50px;
+  padding-left: 200px;
+  padding-right: 200px;
 }
 
 .grey-space{
   background-color: #E5E7EB;
   padding: 50px;
+  padding-left: 200px;
+  padding-right: 200px;
 }
 
 .container{
@@ -55,6 +61,7 @@ div.section-one{
   min-height: 250px; /* Use min-height to ensure the div always has a minimum height */
   display: flex; /* Display the items in a row */
   flex-wrap: wrap; /* Allow items to wrap to a new line if necessary */
+  gap: 50px;
 }
 
 div.left {
@@ -88,6 +95,7 @@ button.signup{
   display: inline-block;
   font-size: 16px;
   border-radius: 8px;
+  flex: auto;
 }
 
 div.right{
@@ -124,6 +132,7 @@ div.square-basket{
   justify-content: center;
   align-items: center;
   gap: 8px;
+  flex-wrap: wrap;
 }
 
 div.square-bag{
@@ -179,7 +188,7 @@ div.section-four{
 div.prompt-box.container {
   flex-wrap: wrap; /* Allow the prompt box to wrap to a new line if necessary */
   background-color: #3882f6; 
-  padding: 10px;
+  padding: 50px;
 }
 
 div.left-prompt.item,
